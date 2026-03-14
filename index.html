@@ -1,129 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Yaswanth Kumar Portfolio</title>
+<title>PAMARTHI YASWANTH KUMAR | Portfolio</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
 body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f4f6f9;
-color:#333;
-}
-
-header{
-background:#111;
+background:#0f172a;
 color:white;
-text-align:center;
-padding:50px 20px;
+line-height:1.6;
 }
 
-header h1{
-margin:0;
-font-size:40px;
-}
+/* NAVBAR */
 
 nav{
-background:#222;
-padding:15px;
-text-align:center;
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+}
+
+nav h2{
+color:#38bdf8;
 }
 
 nav a{
 color:white;
-margin:15px;
+margin-left:20px;
 text-decoration:none;
 font-weight:bold;
 }
 
-section{
-padding:40px;
-max-width:1000px;
-margin:auto;
+/* HERO */
+
+.hero{
+text-align:center;
+padding:100px 20px;
 }
 
-h2{
-border-bottom:3px solid #0077ff;
-display:inline-block;
-padding-bottom:5px;
+.hero h1{
+font-size:45px;
 }
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+margin-top:10px;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:6px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SECTION */
+
+section{
+padding:70px 10%;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+/* SKILLS */
 
 .skills{
 display:flex;
 flex-wrap:wrap;
-gap:10px;
+gap:15px;
 }
 
 .skill{
-background:#0077ff;
-color:white;
-padding:8px 12px;
-border-radius:5px;
+background:#1e293b;
+padding:10px 15px;
+border-radius:6px;
 }
 
-.project{
-background:white;
-padding:20px;
-margin-top:20px;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+/* CARDS */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:8px 0;
+}
+
+/* FOOTER */
 
 footer{
-background:#111;
-color:white;
 text-align:center;
 padding:20px;
-margin-top:40px;
-}
-
-button{
-padding:10px 20px;
-background:#0077ff;
-color:white;
-border:none;
-border-radius:5px;
-cursor:pointer;
+background:#020617;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header>
-<h1>Pamarthi Yaswanth Kumar</h1>
-<p>Python Developer | Web Developer</p>
-</header>
+<!-- NAVBAR -->
 
 <nav>
+
+<h2>Yaswanth Kumar </h2>
+
+<div>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
+<a href="#education">Education</a>
 <a href="#contact">Contact</a>
+</div>
+
 </nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>Hello, I'm <span>Yaswanth Kumar</span></h1>
+
+<p>Python Developer | Web Developer | DATA Analyst</p>
+
+<a href="resume.pdf" class="btn">Download Resume</a>
+
+</div>
+
+<!-- ABOUT -->
 
 <section id="about">
 
-<h2>About Me</h2>
+<h2 class="section-title">About Me</h2>
 
 <p>
-Master of Computer Applications graduate with strong knowledge in Python development,
-web technologies, and database management. Experienced in building web applications
-using Django and Flask frameworks and integrating frontend technologies like HTML,
-CSS, and JavaScript.
+
+MCA graduate with strong knowledge in Python development,
+web technologies and database management. Experienced in
+building web applications using Django and Flask frameworks
+and integrating frontend technologies like HTML, CSS and JavaScript.
+
 </p>
 
 </section>
 
+<!-- SKILLS -->
+
 <section id="skills">
 
-<h2>Technical Skills</h2>
+<h2 class="section-title">Technical Skills</h2>
 
 <div class="skills">
 
@@ -138,67 +203,176 @@ CSS, and JavaScript.
 <div class="skill">SQL</div>
 <div class="skill">Oracle</div>
 <div class="skill">MS Excel</div>
-<div class="skill">MS Word</div>
+<div class="skill">GitHub</div>
 
 </div>
 
 </section>
 
+<!-- EXPERIENCE -->
+
 <section id="experience">
 
-<h2>Experience</h2>
+<h2 class="section-title">Experience</h2>
 
-<div class="project">
+<div class="grid">
 
-<h3>PhonePe Pvt Ltd – Python Developer</h3>
+<div class="card">
+
+<h3>PhonePe Pvt Ltd</h3>
+
+<p>Duration: 1 Year</p>
 
 <p>
-• Developed and maintained web applications using Python, Django, and Flask. </p>
-<p>• Built REST APIs using Django REST Framework.  </p>
-<p>• Designed and managed databases using MySQL and PostgreSQL.  </p>
-<p>• Implemented authentication and authorization systems.  </p>
-<p>• Integrated frontend technologies like HTML, CSS, and JavaScript.  </p>
-<p>• Used Git and GitHub for version control.  </p>
-<p>• Debugged and optimized applications for performance.
+
+Identified new merchants and business partners and helped onboard them onto the PhonePe
+platform.</P>
+<p>Built good relationships with clients through regular follow-ups and clear communication.</P>
+<p>Explained PhonePe products and services to merchants and highlighted their benefits.</P>
+<p>Conducted basic market research to understand customer needs and local competition.</P>
+<p>Negotiated with merchants, closed deals, and ensured smooth account activation.</P>
+<p>Worked closely with internal sales and support teams to resolve merchant issues.</P>
+<p>Maintained records of clients, sales activities, and daily progress.</P>
+<p>Met and achieved monthly sales targets consistently.</P>
+<p>Provided basic training and post-onboarding support to merchants when required.
+
 </p>
 
 </div>
 
+</div>
+
 </section>
+
+<!-- PROJECTS -->
 
 <section id="projects">
 
-<h2>Projects</h2>
+<h2 class="section-title">Projects</h2>
 
-<div class="project">
+<div class="grid">
+
+<div class="card">
 
 <h3>Switchable Novel Object Captioner</h3>
 
 <p>
-Developed an AI model capable of generating captions for objects
-that were not seen during training. The model produces accurate
-descriptions without requiring training sentences.
+
+Developed an AI model that generates captions for objects
+never seen during training, producing accurate descriptions.
+
 </p>
+<p>Developed an object captioner model that can be generate accurate and descriptive caption 
+for objects that has never seen before. The model requires zero training sentences in describing 
+objects.</p>
 
 </div>
 
-<div class="project">
+<div class="card">
 
 <h3>Online Hotel Management System</h3>
 
 <p>
-A web-based system that allows hotel staff to manage room bookings,
-guest details, and payments. Customers can book rooms online and
-track availability easily.
+
+A web-based system to manage hotel bookings, reservations,
+guest information and payments efficiently. </p>
+<p>The Online Hotel Management System is like a digital assistant for hotels. It helps hotel 
+staff keep track of rooms, bookings, and guest requests all in one place, accessible through a 
+website. Guests can book rooms online, make special requests, and pay for their stay easily. 
+For hotel staff, it simplifies tasks like managing reservations, handling payments, and keeping 
+track of room availability. It's a handy tool that makes running a hotel smoother and more 
+efficient. 
+
 </p>
+
+</div>
 
 </div>
 
 </section>
 
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="section-title">Education</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>MCA</h3>
+<p>Annamacharya Institute of Technology and Sciences</p>
+<p>2021 – 2023</p>
+<p>81.1%</p>
+</div>
+
+<div class="card">
+<h3>BSc (MCCS)</h3>
+<p>Sir CR Reddy Autonomous College</p>
+<p>2018 – 2021</p>
+<p>63.3%</p>
+</div>
+
+<div class="card">
+<h3>Intermediate (MPC)</h3>
+<p>Sri Gayatri Junior College</p>
+<p>2016 – 2018</p>
+<p>71.2%</p>
+</div>
+
+</div>
+
+</section>
+<section id="personal">
+
+<h2 class="section-title">Personal Details</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<p><strong>Father Name:</strong> Mr. Paparao</p>
+
+<p><strong>Mother Name:</strong> Mrs. Naga Renuka</p>
+
+<p><strong>Date of Birth:</strong> 4 Sep 2000</p>
+
+<p><strong>Nationality:</strong> Indian</p>
+
+<p><strong>Address:</strong>  
+3/112 Errampally Village  
+Chintalapudi Mandal  
+West Godavari District</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LANGUAGES -->
+
+<section id="languages">
+
+<h2 class="section-title">Languages</h2>
+
+<div class="skills">
+
+<div class="skill">English</div>
+<div class="skill">Telugu</div>
+<div class="skill">Kannada</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
 <section id="contact">
 
-<h2>Contact</h2>
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
 
 <p>Email: pamarthiyaswanth3344@gmail.com</p>
 
@@ -206,16 +380,19 @@ track availability easily.
 
 <p>
 LinkedIn:
-<a href="https://www.linkedin.com/in/yaswanth-kumar-631b6b303" target="_blank">
+<a href="https://www.linkedin.com/in/yaswanth-kumar-631b6b303"
+style="color:#38bdf8">
 View Profile
 </a>
 </p>
+
+</div>
 
 </section>
 
 <footer>
 
-<p>© 2026 Pamarthi Yaswanth Kumar</p>
+<p>© 2026 Yaswanth Kumar</p>
 
 </footer>
 
