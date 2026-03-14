@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Pamarthi yaswanth kumar Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yaswanth Kumar Portfolio</title>
+
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:0;
-background:#f5f5f5;
-}
-
-header{
-background:#222;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-section{
-padding:30px;
-margin:20px;
-background:white;
-border-radius:10px;
-}
-
-h2{
+background:#f4f6f9;
 color:#333;
 }
 
-footer{
-text-align:center;
-padding:20px;
-background:#222;
+header{
+background:#111;
 color:white;
+text-align:center;
+padding:50px 20px;
 }
 
-</style>
-  nav{
-background:#111;
+header h1{
+margin:0;
+font-size:40px;
+}
+
+nav{
+background:#222;
 padding:15px;
 text-align:center;
 }
@@ -48,56 +39,184 @@ margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
+
+section{
+padding:40px;
+max-width:1000px;
+margin:auto;
+}
+
+h2{
+border-bottom:3px solid #0077ff;
+display:inline-block;
+padding-bottom:5px;
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.skill{
+background:#0077ff;
+color:white;
+padding:8px 12px;
+border-radius:5px;
+}
+
+.project{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+button{
+padding:10px 20px;
+background:#0077ff;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+</style>
 </head>
 
 <body>
+
+<header>
+<h1>Pamarthi Yaswanth Kumar</h1>
+<p>Python Developer | Web Developer</p>
+</header>
+
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<header>
-<h1>Pamarthi Yaswanth kumar</h1>
-<p>Data Analyst | Excel Specialist</p>
-</header>
-
-<section>
-<h2>About Me</h2>
-<p>I have experience working with Excel and databases. I enjoy analyzing data and creating useful reports.</p>
-</section>
-
-<section>
 <section id="about">
+
 <h2>About Me</h2>
-<p>I am a data analyst with experience in Excel and database management.</p>
-</section>
-<h2>Skills</h2>
-<ul>
-<li>Microsoft Excel</li>
-<li>Data Analysis</li>
-<li>Database</li>
-<li>Data Cleaning</li>
-</ul>
+
+<p>
+Master of Computer Applications graduate with strong knowledge in Python development,
+web technologies, and database management. Experienced in building web applications
+using Django and Flask frameworks and integrating frontend technologies like HTML,
+CSS, and JavaScript.
+</p>
+
 </section>
 
-<section>
+<section id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">PHP</div>
+<div class="skill">Django</div>
+<div class="skill">Flask</div>
+<div class="skill">ReactJS</div>
+<div class="skill">SQL</div>
+<div class="skill">Oracle</div>
+<div class="skill">MS Excel</div>
+<div class="skill">MS Word</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2>Experience</h2>
+
+<div class="project">
+
+<h3>PhonePe Pvt Ltd – Python Developer</h3>
+
+<p>
+• Developed and maintained web applications using Python, Django, and Flask.  
+• Built REST APIs using Django REST Framework.  
+• Designed and managed databases using MySQL and PostgreSQL.  
+• Implemented authentication and authorization systems.  
+• Integrated frontend technologies like HTML, CSS, and JavaScript.  
+• Used Git and GitHub for version control.  
+• Debugged and optimized applications for performance.
+</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
 <h2>Projects</h2>
-<ul>
-<li>Sales Dashboard using Excel</li>
-<li>Customer Data Analysis</li>
-<li>Data Cleaning Project</li>
-</ul>
+
+<div class="project">
+
+<h3>Switchable Novel Object Captioner</h3>
+
+<p>
+Developed an AI model capable of generating captions for objects
+that were not seen during training. The model produces accurate
+descriptions without requiring training sentences.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Online Hotel Management System</h3>
+
+<p>
+A web-based system that allows hotel staff to manage room bookings,
+guest details, and payments. Customers can book rooms online and
+track availability easily.
+</p>
+
+</div>
+
 </section>
 
-<section>
-<h2>Contact:- 7729897344</h2>
+<section id="contact">
+
+<h2>Contact</h2>
+
 <p>Email: pamarthiyaswanth3344@gmail.com</p>
+
+<p>Phone: 7729897344</p>
+
+<p>
+LinkedIn:
+<a href="https://www.linkedin.com/in/yaswanth-kumar-631b6b303" target="_blank">
+View Profile
+</a>
+</p>
+
 </section>
 
 <footer>
-<p>© 2026 Pamarthi yaswanth kumar</p>
+
+<p>© 2026 Pamarthi Yaswanth Kumar</p>
+
 </footer>
 
 </body>
